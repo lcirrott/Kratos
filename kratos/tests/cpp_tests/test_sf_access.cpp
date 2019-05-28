@@ -42,8 +42,10 @@ KRATOS_TEST_CASE_IN_SUITE(GeometrySFAccess, KratosCoreFastSuite)
 
     BuiltinTimer timer;
 
+	Matrix N_sum = p_geom->ShapeFunctionsValues();
+
     for (IndexType i=0; i<num_evaluations; ++i) {
-        p_geom->ShapeFunctionsValues();
+		N_sum += p_geom->ShapeFunctionsValues();
     }
 
     std::cout << std::endl << num_evaluations << " evaluations took " << timer.ElapsedSeconds() << std::endl;
