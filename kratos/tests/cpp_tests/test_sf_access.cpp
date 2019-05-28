@@ -38,7 +38,7 @@ KRATOS_TEST_CASE_IN_SUITE(GeometrySFAccess, KratosCoreFastSuite)
 
     const Geometry<NodeType>::Pointer p_geom(Kratos::make_shared<Tetrahedra3D4<NodeType>>(node_1, node_2, node_3, node_4));
 
-    const std::size_t num_evaluations = 1e25;
+    const std::size_t num_evaluations = 1e10;
 
     BuiltinTimer timer;
 
