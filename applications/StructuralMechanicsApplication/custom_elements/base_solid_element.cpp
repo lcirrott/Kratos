@@ -1569,7 +1569,7 @@ void BaseSolidElement::CalculateConstitutiveVariables(
     const GeometryType::IntegrationPointsArrayType& IntegrationPoints,
     const ConstitutiveLaw::StressMeasure ThisStressMeasure
     )
-{
+{llll
     // Setting the variables for the CL
     SetConstitutiveVariables(rThisKinematicVariables, rThisConstitutiveVariables, rValues, PointNumber, IntegrationPoints);
 
